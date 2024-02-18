@@ -1,15 +1,27 @@
-package simulateur_robot;
+import java.util.ArrayList;
+public class Area extends Component implements ContientPucks{ 
 
-public class Area extends Component{ 
-
-// TODO ajouter un tableau des elements dans l'area
-
-	
-
-    public Area (int xcoord, int ycoord, Dimension dimension ){
+  private ArrayList<Puck> pucks;
+  private String name;
+  public Area (int xcoord, int ycoord, Dimension dimension, String name ){
 		super( xcoord, ycoord, dimension);
-		this.id = "r" + super.compteur;
-    }
+	    this.id = "a" + super.compteur;
+        this.pucks = new ArrayList<Puck>();
+        this .name = name;
+    
+  }
+  public void addPuck(Puck puck){
+    this.pucks.add(puck);
+  }
+  public Puck removePuck(){
+    return this.pucks.remove(0);
+  }
+  public boolean hasPuck(){
+    return this.pucks.size() > 0;
+  }
 
+  public String toString(){
+    return name +" "+ this.id + " : " + this.pucks.size() + " pucks "+ pucks;
+  }
 
 }

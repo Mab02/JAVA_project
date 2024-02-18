@@ -1,12 +1,10 @@
-// package simulateur_robot;
 
 public class Battery {
 	private Robot robot; /* bidirectional reference with the robot */
 	private int level; 
 
-	public Battery (Robot robot){
-		this.robot= robot; 
-		this.level = 100; 
+	public Battery (){
+		this.level = 100; // Initialisation of battery level  
 	}
 
 	public int getlevel() {

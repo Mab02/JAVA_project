@@ -1,4 +1,3 @@
-// package simulateur_robot;
 
 public class Point {
 	private int xcoord;

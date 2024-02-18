@@ -1,4 +1,3 @@
-package simulateur_robot;
 
 import java.util.ArrayList;
 

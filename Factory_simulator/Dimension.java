@@ -1,6 +1,5 @@
-// package simulateur_robot;
 
-public  class Dimension {
+public final class Dimension {
     	public final int  longueur;
         public final int  largeur;
 

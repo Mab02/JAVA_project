@@ -1,8 +1,21 @@
-// package simulateur_robot;
+import java.util.ArrayList;
+public class Booth extends Component implements ContientPucks{
 
-// public class Booth extends Component{
+    private ArrayList<Puck> pucks;
 
-// // ajouter tableau des elements sur le convoyeur
+    public Booth (int xcoord, int ycoord, Dimension dimension ){
+		  super( xcoord, ycoord, dimension);
+	      this.id = "b" + super.compteur;
+    }
+    public void addPuck(Puck puck){
+        this.pucks.add(puck);
+    }
+    public Puck removePuck(){
+        return this.pucks.remove(0);
+    }
+    public boolean hasPuck(){
+        return this.pucks.size() > 0;
+    }
 
     
-// }
+}

@@ -1,4 +1,3 @@
-package simulateur_robot;
 import java.util.ArrayList;
 
 public class Factory {
@@ -9,3 +8,4 @@ public class Factory {
 		this.componentList = new ArrayList<Component>();
 	}
 }
+// plein de trucs

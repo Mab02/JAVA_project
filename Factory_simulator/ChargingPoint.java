@@ -1,22 +1,27 @@
-// package simulateur_robot;
 
-// public class ChargingPoint extends Component{
-   // private String id;
-   // private Boolean isAvailable;
+public class ChargingPoint extends Component{
+   private Boolean isAvailable;
 
-   // public ChargingPoint (int xcoord, int ycoord, Dimension dimension, String id, Boolean isAavailable) {
-    //      super(xcoord, ycoord, dimension);
-    //      this.id= new id();
-    //      this.available = true;
+   public ChargingPoint (int xcoord, int ycoord, Dimension dimension) {
+         super(xcoord, ycoord, dimension);
+		   this.id = "c" + super.compteur;
+         this.isAvailable = true;
 
-   //}
-   //public boolean setisAvailable (){
-    //      if (isAvailable) { isAvailable = false ; //  robot verifying if chargingPoint is Available
-    //      return true;
-    //  return false;
-    //}
-   //}
+   }
+   public ChargingPoint (int xcoord, int ycoord ) {
+      this(xcoord, ycoord, new Dimension(15,15)); // Setting ChargingPoint dimension by default 
+   }
+
+   public boolean setisAvailable (){
+      if (isAvailable) { isAvailable = false ; //  robot verifying if chargingPoint is Available
+         return true;
+      }
+      return false;
+   }
+   public String toString() {
+      return "ChargingPoint " + id +" is " + (isAvailable ? "available" : "not available");
+   }
 
 
 
-// }
+}
