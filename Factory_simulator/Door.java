@@ -7,7 +7,7 @@ public class Door extends Component {
 	private Room room2;
 
 	public Door(String id, int xcoord, int ycoord, Dimension dimension, boolean open, Room room1, Room room2) {
-		super(id, xcoord, ycoord, dimension);
+		super( xcoord, ycoord, dimension);
 		this.open = open;
 		this.room1 = room1;
 		this.room2 = room2;

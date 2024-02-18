@@ -7,7 +7,7 @@ public class Area extends Component{
 	
 
     public Area (int xcoord, int ycoord, Dimension dimension ){
-		super(id, xcoord, ycoord, dimension);
+		super( xcoord, ycoord, dimension);
 		this.id = "r" + super.compteur;
     }
 

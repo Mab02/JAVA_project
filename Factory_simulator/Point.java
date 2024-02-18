@@ -1,4 +1,4 @@
-package simulateur_robot;
+// package simulateur_robot;
 
 public class Point {
 	private int xcoord;
@@ -6,8 +6,8 @@ public class Point {
 
 
 Point(int x0, int y0) {
-	this.x = x0;
-	this.y = y0;
+	this.xcoord = x0;
+	this.ycoord = y0;
 }
 
 public int getxcoord() {
