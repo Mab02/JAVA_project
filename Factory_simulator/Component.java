@@ -1,37 +1,20 @@
 package simulateur_robot;
 
 public abstract class Component {
-	private String id;
+	private static int compteur = 0;
+	public final String id;
+	private Point point;
+	public final Dimension dimension;
 
-	private int xcoord;
-
-	private int ycoord;
-	
-	private Dimension dimension;
-
-
-
-public String getId() {
-
-return id;
-
-}
-public int getxcoord() {
-
-return xcoord;
-
-}
-public void setxcoord(int xcoord) {
+public Component( int xcoord, int ycoord, Dimension dimension) {
+	compteur++;
 	this.xcoord = xcoord;
-	
-}
-public int getycoord() {
-
-return ycoord;
-
-}
-public void setycoord(int ycoord) {
 	this.ycoord = ycoord;
+	this.dimension = dimension;
 }
 
+
+
+
+}
 }
