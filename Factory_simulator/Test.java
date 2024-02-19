@@ -6,7 +6,15 @@ public class Test {
         Robot robot3 = new Robot(11,11,chargingPoint1, new Point (20,20));
         Puck puck1 = new Puck(7,7, true);
         Puck puck2 = new Puck(7,7,false);
-        Area Packaging_area = new Area(0,0, new Dimension(30,30), "Packaging_Area");
+        Area Packaging_area = new Area(0,0, new Dimension(30,30), "Packaging Area");
+        Room room1 = new Room(0,0, new Dimension(30,10), "Stock Room");
+        Room room2 = new Room(0,10, new Dimension(10,20), "Packing Room");
+        Room room3 = new Room(30,10, new Dimension(20,10), "Delivery Room");
+        Room room4 = new Room(20,10, new Dimension(30,10), "Sorting Room");
+
+
+
+
         Packaging_area.addPuck(puck1);
         System.out.println (chargingPoint1);
         System.out.println (robot1);

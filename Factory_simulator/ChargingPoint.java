@@ -19,7 +19,7 @@ public class ChargingPoint extends Component{
       return false;
    }
    public String toString() {
-      return "ChargingPoint " + id +" is " + (isAvailable ? "available" : "not available");
+      return "Charging Point " + id +" is " + (isAvailable ? "available" : "not available");
    }
 
 

@@ -7,6 +7,9 @@ public class Booth extends Component implements ContientPucks{
 		  super( xcoord, ycoord, dimension);
 	      this.id = "b" + super.compteur;
     }
+    public Booth (int xcoord, int ycoord ){
+	      this (xcoord, ycoord, new Dimension(12,1));
+    }
     public void addPuck(Puck puck){
         this.pucks.add(puck);
     }
