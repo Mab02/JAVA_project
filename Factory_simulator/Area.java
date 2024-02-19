@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 public class Area extends Component implements ContientPucks{ 
 
-  private ArrayList<Puck> pucks;
-  private String name;
+ 
+ 
   public Area (int xcoord, int ycoord, Dimension dimension, String name ){
 		super( xcoord, ycoord, dimension);
 	    this.id = "a" + super.compteur;
